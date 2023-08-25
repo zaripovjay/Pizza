@@ -1,0 +1,979 @@
+:root {
+
+  --primary: #FF7010;
+
+  --secondary: #F0F0F0;
+  --font: system-ui;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.4;
+  background-color: var(--secondary);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+/* Header section styling! */
+
+.navigation {
+
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+
+}
+
+a {
+  color: black;
+  transition: all .6s ease;
+}
+
+a:hover {
+  color: #FF7010;
+
+}
+
+.burger-menu {
+  display: none;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-btn button {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  transition: all .6s ease;
+}
+
+.nav-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.menu-boxes {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.menu-box {
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 15px 0px;
+  flex-direction: column;
+}
+
+.content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 16px 0;
+}
+
+.content img {
+  width: 100%;
+}
+
+.search-input {
+  background-color: #fff;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.search-input a {
+  font-weight: 500;
+}
+
+.form {
+  border: 1px solid rgba(128, 128, 128, 0.473);
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+}
+
+#search-input {
+  width: 100%;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.input-btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  transition: all .6s ease;
+  font-size: 18px;
+}
+
+.input-btn:hover {
+  color: var(--primary);
+  background-color: black;
+}
+
+.pizza-section {
+  margin-top: 2rem;
+}
+
+.pizza {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.pizza-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.pizza-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.pizza-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.pizza-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.pizza-card img {
+  width: 100%;
+}
+
+.pizza-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.pizza-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.pizza-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.pizza-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.pizza-price {
+  color: var(--primary);
+}
+
+/* End of Pizza Section */
+
+/* Start of Sushi section */
+
+.sushi-section {
+  margin-top: 2rem;
+}
+
+.sushi {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.sushi-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.sushi-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.sushi-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.sushi-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.sushi-card img {
+  width: 100%;
+}
+
+.sushi-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.sushi-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sushi-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.sushi-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.sushi-price {
+  color: var(--primary);
+}
+
+/* End of Sushi Style */
+/* Start of Snack section */
+.snack-section {
+  margin-top: 2rem;
+}
+
+.snack {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.snack-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.snack-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.snack-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.snack-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.snack-card img {
+  width: 100%;
+}
+
+.snack-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.snack-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.snack-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.snack-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.snack-price {
+  color: var(--primary);
+}
+
+/* End of Snack styling */
+/* Start of Dessert styling */
+.dessert-section {
+  margin-top: 2rem;
+}
+
+.dessert {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.dessert-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.dessert-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.dessert-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.dessert-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.dessert-card img {
+  width: 100%;
+}
+
+.dessert-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.dessert-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.dessert-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.dessert-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.dessert-price {
+  color: var(--primary);
+}
+
+/* End of Dessert styling! */
+/* Start of Drink styling! */
+.drink-section {
+  margin-top: 2rem;
+}
+
+.drink {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.drink-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.drink-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.drink-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.drink-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.drink-card img {
+  width: 100%;
+}
+
+.drink-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.drink-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.drink-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.drink-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.drink-price {
+  color: var(--primary);
+}
+
+/* End of drink styling */
+/* Sause section styling start */
+.sauce-section {
+  margin-top: 2rem;
+}
+
+.sauce {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.sauce-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.sauce-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.sauce-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.sauce-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.sauce-card img {
+  width: 100%;
+}
+
+.sauce-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.sauce-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sauce-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.sauce-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.sauce-price {
+  color: var(--primary);
+}
+
+/* End of sauce styling! */
+/* Start of Combo styling! */
+.combo-section {
+  margin-top: 2rem;
+}
+
+.combo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+}
+
+.combo-section__btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all .6s ease;
+}
+
+.combo-section__btn:hover {
+  background-color: black;
+  color: var(--primary);
+  border-radius: 8px;
+}
+
+
+.combo-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.combo-card {
+  background-color: #fff;
+  display: grid;
+}
+
+.combo-card img {
+  width: 100%;
+}
+
+.combo-info {
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.combo-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.combo-btn button {
+  border: none;
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: rotate(360deg);
+  transition: all .7s ease;
+}
+
+.combo-btn button:hover {
+  background-color: black;
+  color: var(--primary);
+}
+
+.combo-price {
+  color: var(--primary);
+}
+
+/* End of Combo styling */
+/* Start of Blog styling */
+.blog {
+  margin-top: 40px;
+}
+
+.blog-desc {
+  display: grid;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+.blog-info__bottom {
+  opacity: .6;
+}
+
+.blog-link {
+  color: var(--primary);
+}
+
+.blog-link:hover {
+  color: black;
+}
+
+/* End of Blog section */
+/* Start of Footer styling */
+.footer-box {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 0;
+}
+
+
+
+.footer1 {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer2 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer3 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer4 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+
+.div {
+  display: grid;
+  gap: 1rem;
+
+}
+
+/* Media section styling */
+@media screen and (max-width:760px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width:705px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .burger-menu {
+    display: inline;
+  }
+
+  .pizza-desc,
+  .pizza-price {
+    display: none;
+  }
+
+  .pizza-title {
+    font-size: 14px;
+  }
+
+  .pizza-btn {
+    margin: 0 auto;
+
+  }
+
+  .sushi-desc,
+  .sushi-price {
+    display: none;
+  }
+
+  .sushi-title {
+    font-size: 14px;
+  }
+
+  .sushi-btn {
+    margin: 0 auto;
+
+  }
+
+  .snack-desc,
+  .snack-price {
+    display: none;
+  }
+
+  .snack-title {
+    font-size: 14px;
+  }
+
+  .snack-btn {
+    margin: 0 auto;
+
+  }
+
+  .dessert-desc,
+  .dessert-price {
+    display: none;
+  }
+
+  .dessert-title {
+    font-size: 14px;
+  }
+
+  .dessert-btn {
+    margin: 0 auto;
+
+  }
+
+  .drink-desc,
+  .drink-price {
+    display: none;
+  }
+
+  .drink-title {
+    font-size: 14px;
+  }
+
+  .drink-btn {
+    margin: 0 auto;
+
+  }
+
+  .sauce-desc,
+  .sauce-price {
+    display: none;
+  }
+
+  .sauce-title {
+    font-size: 14px;
+  }
+
+  .sauce-btn {
+    margin: 0 auto;
+
+  }
+
+  .combo-desc,
+  .combo-price {
+    display: none;
+  }
+
+  .combo-title {
+    font-size: 14px;
+  }
+
+  .combo-btn {
+    margin: 0 auto;
+
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .menu-boxes {
+    display: none;
+
+  }
+
+  .search-input a {
+    display: none;
+  }
+
+  .search-input {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .input-btn {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width:575px) {
+
+  .pizza-box,
+  .sushi-box,
+  .dessert-box,
+  .snack-box,
+  .combo-box,
+  .drink-box,
+  .sauce-box {
+    grid-template-columns: repeat(3, 1fr);
+
+
+  }
+
+  .footer-box {
+    display: block;
+  }
+
+  .footer1 p {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:420px) {
+
+  .pizza-box,
+  .sushi-box,
+  .dessert-box,
+  .snack-box,
+  .combo-box,
+  .drink-box,
+  .sauce-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  .pizza-box,
+  .sushi-box,
+  .dessert-box,
+  .snack-box,
+  .combo-box,
+  .drink-box,
+  .sauce-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
